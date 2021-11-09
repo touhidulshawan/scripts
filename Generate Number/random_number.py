@@ -12,13 +12,13 @@ def generate_number(number_code):
         random_number = randint(0, 9)
         phone_number = phone_number+str(random_number)
         step = step + 1
-    print(phone_number)
     return phone_number
 
 # generate numbers as many as user want
 
 
 def generate_numbers(amount, number_code):
+    print("Generating numbers...")
     step = 0
     while step < amount:
         number = generate_number(number_code)
